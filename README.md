@@ -1,4 +1,3 @@
-// File: README.md
 
 # 📝 React Redux Task Manager
 
@@ -12,7 +11,7 @@ A simple task management app built with **React**, **Redux Toolkit**, and **Tail
 - Edit existing tasks
 - Mark tasks as completed or pending
 - Delete tasks
-- Filter tasks by: All | Done | Pending
+- Filter tasks by: All | Completed | Pending
 - LocalStorage support to persist data
 - Responsive and clean UI using Tailwind CSS
 
@@ -32,8 +31,8 @@ A simple task management app built with **React**, **Redux Toolkit**, and **Tail
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/your-username/react-redux-task-app.git
-cd react-redux-task-app
+https://github.com/sanivirani/todoApp
+cd task-app
 ```
 
 2. **Install dependencies:**
