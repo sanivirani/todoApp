@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+// File: README.md
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 📝 React Redux Task Manager
 
-## Available Scripts
+A simple task management app built with **React**, **Redux Toolkit**, and **Tailwind CSS**. Users can add, edit, delete, and toggle the status of tasks. Tasks are persisted in **localStorage**.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Add new tasks
+- Edit existing tasks
+- Mark tasks as completed or pending
+- Delete tasks
+- Filter tasks by: All | Done | Pending
+- LocalStorage support to persist data
+- Responsive and clean UI using Tailwind CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 💠 Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- Redux Toolkit
+- Tailwind CSS
+- LocalStorage (for persistence)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛆 Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/your-username/react-redux-task-app.git
+cd react-redux-task-app
+```
 
-### `npm run eject`
+2. **Install dependencies:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Start the development server:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> App will run at: `http://localhost:5173/` (if using Vite) otherwise 3000
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📁 Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+src/
+│
+├── components/
+│   ├── Taskitem.js       # Single task item
+│   └── TaskList.js       # List of all tasks
+│
+├── redux/
+│   ├── store.js          # Redux store configuration
+│   └── taskSlice.js      # Task reducer with actions
+│
+├── App.js                # Main component
+├── index.js              # App entry point
+└── index.css             # Tailwind styles
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🧠 State Management (Redux)
 
-### Analyzing the Bundle Size
+- The app uses Redux Toolkit's `createSlice` to manage the task list.
+- Actions:
+  - `addTask`
+  - `editTask`
+  - `toggleTask`
+  - `deleteTask`
+  - `setTasks` (used for syncing with localStorage)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📂 Persistence
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Tasks are automatically saved in `localStorage` whenever they are updated.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📄 License
 
-### Deployment
+MIT License. Use this freely in your own projects.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🙌 Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Redux Toolkit Docs
+- Tailwind CSS Docs
+- React Official Docs
